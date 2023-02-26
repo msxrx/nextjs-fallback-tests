@@ -40,7 +40,7 @@ const Page: NextPage<
       <p>{REVALIDATE_MSG}</p>
       <p>Next revalidation at: {props.nextRevalidaiton}</p>
       <p>Finished generation at: {props.finishedAt}</p>
-      <p>v 1.2</p>
+      <p>v 1.3</p>
     </main>
   );
 };
@@ -50,7 +50,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: "blocking",
+    fallback: true,
   };
 };
 
