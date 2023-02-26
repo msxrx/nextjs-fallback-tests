@@ -40,6 +40,7 @@ const Page: NextPage<
       <p>{REVALIDATE_MSG}</p>
       <p>Next revalidation at: {props.nextRevalidaiton}</p>
       <p>Finished generation at: {props.finishedAt}</p>
+      <p>v 1.1</p>
     </main>
   );
 };
